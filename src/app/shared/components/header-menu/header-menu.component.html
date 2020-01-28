@@ -1,4 +1,4 @@
-<div>
-     <app-svg-icon icon="icon-close" class="icon"></app-svg-icon>
-     <app-svg-icon icon="icon-menu" class="icon"></app-svg-icon>
+<div class="minim-menu">
+     <app-svg-icon icon="icon-close" class="icon" *ngIf="isOpen" (click)="isOpen=!isOpen"></app-svg-icon>
+     <app-svg-icon icon="icon-menu" class="icon" *ngIf="!isOpen" (click)="isOpen=!isOpen"></app-svg-icon>
 </div>

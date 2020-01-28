@@ -1,10 +1,25 @@
 <header>
-  <nav>
+  <!-- <nav>
     <app-header-menu></app-header-menu>
     <div class="minim-logo">minim</div>
     <div class="account">account</div>
     <div class="shopping-bag">
       <app-svg-icon icon="icon-bag" class="icon"></app-svg-icon>
     </div>
-  </nav>
+  </nav> -->
+
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col-md-1"><app-header-menu></app-header-menu></div> 
+      <div class="col-md-1"> <app-svg-icon icon="icon-search" class="icon"></app-svg-icon></div>
+      <div class="col-md-8 minim-logo">minim</div>
+      <div class="col-md-1 account">account</div>
+      <div class="col-md-1 1"> 
+        <div class="shopping-bag">
+        <app-svg-icon icon="icon-bag" class="icon"></app-svg-icon>
+      </div>
+    </div>
+      
+    </div>
+  </section>
 </header>

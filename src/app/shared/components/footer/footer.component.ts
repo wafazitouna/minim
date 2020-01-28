@@ -6,7 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-
+   menuItems = [
+    'first',
+    'second',
+    'third',
+    'fouth',
+    'fifth',
+    'sixth'
+  ];
   constructor() { }
 
   ngOnInit() {

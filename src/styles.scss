@@ -1,3 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/scss/bootstrap-reboot';
 @import '~bootstrap/scss/bootstrap-grid';
+@import  './assets/libraries/fontawesome.min.css';
+
+img{
+    width: 100%;
+}
+.bg-grey{
+    background-color: #F0F0F0;
+}
+
+.bg-blue{
+    background-color: #C0DAE9;
+}
+
+.bg-black{
+ background-color: #1E191D;
+}
