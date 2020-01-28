@@ -9,7 +9,7 @@ import { SvgIconComponent } from './svg-icon/svg-icon.component';
 
 @NgModule({
   declarations: [HeaderComponent,FooterComponent, HeaderMenuComponent, SvgIconComponent],
-  exports: [HeaderComponent, FooterComponent, HeaderMenuComponent],
+  exports: [HeaderComponent, FooterComponent, HeaderMenuComponent, SvgIconComponent],
   imports: [
     CommonModule
   ]
