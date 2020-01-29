@@ -55,10 +55,13 @@
 }
 .block-collection{
     display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
 }
-.wood-bottle{
-    top:8rem;
-}
+
 .collection-description p {
   font-size: 0.9rem;
   width: 80%;
