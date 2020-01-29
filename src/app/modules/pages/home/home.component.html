@@ -1,5 +1,111 @@
 <section class="container-fluid">
     <app-slider></app-slider>
 </section>
-<p>home works!</p>
+<section class="container-fluid mt-5 mb-5">
+    <div class="row px-md-5">
+        <div class="col px-md-3">
+            <div class="bg-grey outdoors">
+                <div class="block-numeration">1.1</div>
+                <div class="hp-title-section pb-4">
+                  <h2 class="mb-0">Outdoors </h2>
+                  <span class="sub-small-title ml-0">Shop</span>
+                </div>
+                <div class="img-block"><img src="./../../../../assets/img/home/outdoors.png"></div>
+                <div class="link-block"><a routerLink="routeName">Shop Outdoors</a></div>
+            </div>
+        </div>
+        <div class="col px-md-3">
+                <div class="bg-blue indoors">
+                <div class="block-numeration">1.2</div>
+                <div class="hp-title-section pb-4  ">
+                  <h2 class="mb-0">Intdoors</h2>
+                   <span class="sub-small-title ml-0">Shop</span>
+                </div>
+                <div class="img-block"><img src="./../../../../assets/img/home/indoors.png"></div>
+                <div class="link-block"><a routerLink="routeName">Shop Intdoors</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container popular mt-5 mb-5">
+      <div class="hp-title-section pb-4 mb-0">
+        <h2>Popular <span class="sub-small-title">Shop</span></h2>
+      </div>
+        <div class="row pb-5">
+          
+            <div class="col-md-3 pb-5" *ngFor="let product of productList">
+                <div class="product-container mb-5">
+                    <div class="product-falgs"></div>
+                    <div class="product-img"><img src="{{product.img}}"></div>
+                    <div class="product-details mt-4">
+                        <div class="product-name">
+                          <h3>{{product.name}}</h3> 
+                        <div class="product-brand">{{product.brand}}</div>
+                    </div>
+                        <div class="product-price">{{product.price}} <span class="currency">$</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<section class="container collection mt-5 mb-5">
+       <div class="hp-title-section pb-4">
+         <h2>Collection <span class="sub-small-title">Shop</span></h2>
+       </div>
+    <div class="row mt-5 mb-5">
+         <!-- <div class="col-md-12 hp-title-section mb-4">Collection <span calss="shop">Shop</span></div> -->
+        <div class="col-md-4">
+            <div class="collection-description">
+              <p>Baco nipsum dolori meat,tri-tip andouille, picanha bacon salami burgdgogghen turducken check pingh -t
+                to one</p>
+            </div>
+             <div class="link-block pt-5"><a routerLink="routeName">See all collection</a></div>
+                </div>
+                <div class="col-md-8">
+                    <div class="block-collection">
+                        <img src='./../../../../assets//img/home/lampe.png' class="large-collection">
+    
+                         <div class="hp-title-section pb-4">
+                            <span class="sub-small-title ml-0">Collection</span>
+                           <h2 class="mb-0">Hang Lamp </h2>
+                         </div>
+                    </div>
+                </div>
+            </div>
+         <div class="row mt-5 mb-5">
+        <div class="col-md-6">
+             <div class="block-collection">
+               <img src='./../../../../assets//img/home/wood-mug.png' class="small-collection">
+      
+               <div class="hp-title-section pb-4">
+                 <span class="sub-small-title ml-0">Collection</span>
+                 <h2 class="mb-0">Wood Mug </h2>
+               </div>
+             </div>
+        </div>
+        <div class="col-md-6 wood-bottle">
+            <div class="block-collection">
+              <img src='./../../../../assets//img/home/wood-bottle.png' class="small-collection">
+
+              <div class="hp-title-section pb-4">
+                <span class="sub-small-title ml-0">Collection</span>
+                <h2 class="mb-0">Wood Bottle </h2>
+              </div>
+            </div>
+        </div>
+    </div>
+     <div class="row mt-5 mb-5">
+         <div class="col-md-6">
+             <div class="block-collection">
+               <img src='./../../../../assets//img/home/wall-clock.png' class="large-collection">
+
+                <div class="hp-title-section pb-4">
+                  <span class="sub-small-title ml-0">Collection</span>
+                  <h2 class="mb-0">Clock </h2>
+                </div>
+             </div>
+         </div>
+
+     </div>
+</section>
 <app-newsletter></app-newsletter>

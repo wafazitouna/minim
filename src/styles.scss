@@ -3,6 +3,18 @@
 @import '~bootstrap/scss/bootstrap-grid';
 @import  './assets/libraries/fontawesome.min.css';
 
+@font-face {
+  font-family: 'Poppins';
+  src: url(./assets/fonts/poppins/Poppins-Regular.ttf) ;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a:hover{
+    text-decoration: none;
+}
 img{
     width: 100%;
 }

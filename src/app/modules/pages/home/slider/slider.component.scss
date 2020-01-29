@@ -1,0 +1,21 @@
+.slider-menu{
+    list-style: none;
+        margin-top: 3rem;
+        &:before {
+          content: "";
+          height: 5rem;
+          width: 1px;
+          background-color: #000;
+          position: relative;
+          display: block;
+          top: -2rem;
+        }
+        li{
+            padding: 1rem 0;
+        }
+}
+.slider-title{
+        font-size: 3rem;
+        font-weight: 700;
+
+}

@@ -1,0 +1,86 @@
+.product-img img{
+    width: 200px;
+}
+.product-name h3{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.product-brand{
+    display:inline-block;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    opacity: 0.5;
+    font-weight: 500;
+}
+
+.product-price {
+  opacity: 0.5;
+  font-weight: 600;
+}
+
+
+
+.outdoors , .indoors{
+  
+    height: 450px;
+    padding: 2rem 2rem 2rem 3rem;
+
+    img{
+        width: 180px;
+
+    }
+    .img-block{
+        text-align: center;
+    }
+    .link-block{
+            position: absolute;
+            right: 3rem;
+            bottom: 3rem;
+    }
+    .block-numeration {
+        text-align: right;
+    }
+    .hp-title-section {
+        position:absolute;
+        
+    }
+}
+
+.large-collection {
+  max-width: 400px;
+}
+.small-collection{
+    max-width: 230px;
+}
+.block-collection{
+    display: flex;
+}
+.wood-bottle{
+    top:8rem;
+}
+.collection-description p {
+  font-size: 0.9rem;
+  width: 80%;
+  line-height: 1.5rem;
+  opacity: 0.8;
+}
+
+
+.sub-small-title{
+    font-size: 1rem;
+    margin-left: 1rem;
+    opacity: 0.35;
+    text-transform: uppercase;
+}
+.hp-title-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.link-block a {
+  font-size: 1rem;
+  color: #000;
+  border-bottom: 2px solid;
+}
+
