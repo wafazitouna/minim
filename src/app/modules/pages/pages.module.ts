@@ -5,12 +5,13 @@ import { PagesRoutingModule } from './pages.routing.module';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { SharedModule } from 'src/app/shared/components/shared.module';
 import { HomeModule } from './home/home.module';
+import { ShopComponent } from './shop/shop.component';
 
 
 
 @NgModule({
-  declarations: [HomeComponent, NotFoundComponent],
-  exports: [HomeComponent, NotFoundComponent],
+  declarations: [HomeComponent, NotFoundComponent, ShopComponent],
+  exports: [HomeComponent, NotFoundComponent, ShopComponent],
   imports: [
     CommonModule,
     PagesRoutingModule,

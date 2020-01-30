@@ -1,0 +1,17 @@
+<section class="container">
+<div class="row">
+     <div class="col-md-3 pb-5" *ngFor="let product of pagedProducts">
+       <div class="product-container mb-5">
+         <div class="product-falgs"></div>
+         <div class="product-img"><img src="{{product.img}}"></div>
+         <div class="product-details mt-4">
+           <div class="product-name">
+             <h3>{{product.name}}</h3>
+             <div class="product-brand">{{product.brand}}</div>
+           </div>
+           <div class="product-price">{{product.price}} <span class="currency">$</span></div>
+         </div>
+       </div>
+     </div>
+</div>
+</section>>

@@ -10,28 +10,32 @@
 }
 .social-network{
     list-style: none;
-    a.icoFacebook {
-        background-color: #3B5998;
-        color: #fff;
-      }
-      a.icoLinkedin {
-        background-color: #007bb7;
-        color: #fff;
-      }
+    a{
+       color: #fff;
+       
+    }
+    .icoFacebook {
+      background-color: #3B5998;
+
+    }
+
+    .icoLinkedin {
+      background-color: #0e76a8;
+
+    }
+
+    .icoTwitter {
+      background-color: #38A1F3;
+    }
+    
       li{
         display: inline;
-        padding: 0 1rem;
+        padding: 0 0.5rem;
     } 
       
 }
 
 
-
-  
-  .social-network a.socialIcon:hover,
-  .socialHoverClass {
-    color: #44BCDD;
-  }
   .social-circle {
       li{
         a {

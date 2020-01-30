@@ -1,31 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~bootstrap/scss/bootstrap-reboot';
-@import '~bootstrap/scss/bootstrap-grid';
-@import  './assets/libraries/fontawesome.min.css';
+@import "~bootstrap/scss/bootstrap-reboot";
+@import "~bootstrap/scss/bootstrap-grid";
+
 
 @font-face {
-  font-family: 'Poppins';
-  src: url(./assets/fonts/poppins/Poppins-Regular.ttf) ;
+    font-family: 'Poppins';
+    src: url(./assets/fonts/poppins/Poppins-Regular.ttf);
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
+    color: $black;
 }
 
-a:hover{
+a {
+    color: $black;
+}
+
+a:hover {
     text-decoration: none;
 }
-img{
+
+img {
     width: 100%;
 }
-.bg-grey{
+
+.bg-grey {
     background-color: #F0F0F0;
 }
 
-.bg-blue{
+.bg-blue {
     background-color: #C0DAE9;
 }
 
-.bg-black{
- background-color: #1E191D;
+.bg-black {
+    background-color: #1E191D;
 }
