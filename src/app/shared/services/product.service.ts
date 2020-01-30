@@ -13,7 +13,7 @@ export class ProductService {
    * @memberof ProductService
    */
   getAll(){
-    return this.http.get<any>('data/products.json');
+    return this.http.get<any>('./../../../assets/data/products.json');
   }
 
 

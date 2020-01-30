@@ -36,3 +36,43 @@ img {
 .bg-black {
     background-color: #1E191D;
 }
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+  
+  .sticky{
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 10;
+    padding-top: 0!important;
+    width: 100%;
+    background-color: #ffffffc2;
+    height: 4rem;
+  }
+.product-img img{
+    width: 200px;
+}
+.product-name h3{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.product-brand{
+    display:inline-block;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    opacity: 0.5;
+    font-weight: 500;
+}
+
+.product-price {
+  opacity: 0.5;
+  font-weight: 600;
+}

@@ -19,7 +19,7 @@ export class ShopComponent implements OnInit {
   // paged items
   pagedProducts: any[];
 
-
+ currentPage=1;
   constructor(private productService: ProductService, private paginatorService:PaginatorService) { }
 
   ngOnInit() {
@@ -34,12 +34,14 @@ export class ShopComponent implements OnInit {
 
 
   setPage(page: number) {
-    if (page < 1 || page > this.pager.totalPages) {
+    this.currentPage=page;
+
+    if (this.currentPage < 1 || this.currentPage > this.pager.totalPages) {
       return;
     }
 
     // get pager object from service
-    this.pager = this.paginatorService.getPager(this.productList.length, page);
+    this.pager = this.paginatorService.getPager(this.productList.length, this.currentPage,12);
 
     // get current page of products
     this.pagedProducts = this.productList.slice(this.pager.startIndex, this.pager.endIndex + 1);
