@@ -1,4 +1,10 @@
 <div class="minim-menu">
-     <app-svg-icon icon="icon-close" class="icon" *ngIf="isOpen" (click)="isOpen=!isOpen"></app-svg-icon>
-     <app-svg-icon icon="icon-menu" class="icon" *ngIf="!isOpen" (click)="isOpen=!isOpen"></app-svg-icon>
+     <!-- <app-svg-icon icon="icon-close" class="icon" *ngIf="isOpen" (click)="isOpen=!isOpen"></app-svg-icon>
+     <app-svg-icon icon="icon-menu" class="icon" *ngIf="!isOpen" (click)="isOpen=!isOpen"></app-svg-icon> -->
+
+      <a class="toggle-menu" href="#" [ngClass]="{'active': isOpen}" (click)="isOpen=!isOpen">
+        <i></i>
+        <i></i>
+        <i></i>
+      </a>
 </div>

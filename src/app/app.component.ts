@@ -22,7 +22,7 @@ export class AppComponent {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
-     if (window.pageYOffset > 550) {
+     if (window.pageYOffset > 100) {
        let element = document.getElementById('minim-header');
        element.classList.add('sticky');
      } else {

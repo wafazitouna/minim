@@ -1,7 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/scss/bootstrap-reboot";
-@import "~bootstrap/scss/bootstrap-grid";
-
 
 @font-face {
     font-family: 'Poppins';
@@ -10,21 +7,28 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    color: $black;
+    color: #000;
 }
 
 a {
-    color: $black;
+    color: #000!important;
+    &:hover {
+      text-decoration: none!important;
+      color: #d7b493 !important;
+    }
 }
 
-a:hover {
-    text-decoration: none;
-}
 
+.disabled_link{
+    opacity: 0.5;
+    pointer-events: none;
+}
 img {
     width: 100%;
 }
-
+.text-uppercase{
+    text-transform: uppercase;
+}
 .bg-grey {
     background-color: #F0F0F0;
 }
@@ -53,8 +57,15 @@ img {
     z-index: 10;
     padding-top: 0!important;
     width: 100%;
-    background-color: #ffffffc2;
+    background-color: #ffffffe6;
     height: 4rem;
+    line-height: 60px;
+        .toggle-menu{
+            top:5px!important;
+        }
+       [for=search-btn]{
+               top: 12px !important;
+       }
   }
 .product-img img{
     width: 200px;

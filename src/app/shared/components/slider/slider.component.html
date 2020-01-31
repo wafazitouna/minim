@@ -1,0 +1,40 @@
+<div class="container pt-5 pb-5">
+    <div class="row">
+       <div class="col-md-3">
+           <div class="slider-title">Shop</div>
+        <ul class="slider-menu p-0">
+            <li *ngFor="let slide of slidePictures;let index=index">
+                <a  (click)="setCurrentSlider(index)">{{slide.menuLabel}}</a>
+            </li>
+        </ul>
+       </div> 
+       <div class="col-md-9" >
+               <div class="row">
+                  <div class="col-md-9">
+                    <img src="{{currentSlide.img}}">
+                  </div>
+
+                  <div class="col-md-3">
+                     <p>{{currentSlide.numeration}}</p>
+                    <p>{{currentSlide.textLine1}}</p>
+                    <p>{{currentSlide.textLine2}}</p>
+                  </div>
+               </div>
+                 <div class="row pt-5 pb-5">
+                   <div class="col-md-9">
+                     <div class="slider_dots">
+                       <a routerLink="" class="slider_indicator" *ngFor="let slide of slidePictures"></a>
+                     </div>
+                   </div>
+                   <div class="col-md-3">
+                     <a routerLink="" (click)="openModal()">Support</a>
+                   </div>
+                 </div>
+    </div> 
+   
+    </div>
+    </div>
+<!-- <div class="container-fluid">
+  
+        
+</div> -->

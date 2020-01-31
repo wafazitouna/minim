@@ -1,4 +1,4 @@
-<section class="container">
+<div class="container">
 <div class="row">
      <div class="col-sm-12 col-md-4 col-lg-3 pb-5" *ngFor="let product of pagedProducts">
        <div class="product-container mb-5">
@@ -15,8 +15,11 @@
      </div>
 </div>
 <div class="paginator">
- <div class="paginator-prev">Previous</div> 
- <div class="paginator-num">{{currentPage}}/{{pager.totalPages}} </div>
- <div class="paginator-next">Previous</div>
+ <div [ngClass]="{disabled_link:pager.currentPage === 1}" class="paginator-prev" >
+     <a [routerLink]="" (click)="setPage(pager.currentPage -
+   1)"> Previous</a></div>
+ <div class="paginator-num">{{pager.currentPage}}/{{pager.totalPages}} </div>
+ <div [ngClass]="{disabled_link:pager.currentPage === pager.totalPages}" class="paginator-next"
+   ><a [routerLink]="" (click)="setPage(pager.currentPage + 1)">Next</a></div>
 </div>
-</section>>
+</div>>

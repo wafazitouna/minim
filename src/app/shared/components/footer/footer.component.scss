@@ -1,18 +1,26 @@
+footer {
+  margin-top: 5rem;
+}
 .footer-menu {
     text-align: center;
+    font-size: 0.8rem;
+    opacity: 0.6;
     ul {
         list-style: none;
     li{
         display: inline;
-        padding: 0 1rem;
+        padding: 0 0.9rem;
     }
     }
+}
+.minim-copyright {
+  font-size: 0.8rem;
+      opacity: 0.6;
 }
 .social-network{
     list-style: none;
     a{
-       color: #fff;
-       
+       color: #fff; 
     }
     .icoFacebook {
       background-color: #3B5998;
@@ -46,13 +54,12 @@
             -webkit-border-radius: 50%;
             border-radius: 50%;
             text-align: center;
-            width: 30px;
-            height: 30px;
-            font-size: 15px;
+            width: 28px;
+            height: 28px;
           }
           i {
             margin: 0;
-            line-height: 30px;
+            line-height: 28px;
             text-align: center;
           }
       }

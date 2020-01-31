@@ -1,3 +1,6 @@
 <app-header></app-header>
-<router-outlet (scroll)="onWindowScroll($event);"></router-outlet>
+<section id="wrapper" (scroll)="onWindowScroll($event);">
+    <router-outlet></router-outlet>
+</section>
+
 <app-footer></app-footer>
