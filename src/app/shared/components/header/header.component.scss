@@ -19,7 +19,7 @@ $mag-d: .5*$txt-h;
 $mag-f: .125;
 $mag-w: $mag-f*$mag-d;
 $mag-c: #000c;
-$t: .65s;
+
 
 
 
@@ -45,7 +45,7 @@ $t: .65s;
   height: 2rem;
   transform: translate(var(--pos, -.5*$txt-w)) rotate(45deg);
   text-indent: -100vw;
-  transition: $t ease-out;
+  transition:.65s ease-out;
   cursor: pointer;
 
   &:before,
@@ -56,7 +56,6 @@ $t: .65s;
     margin: -.5*$mag-d;
     width: $mag-d;
     height: $mag-d;
-    transition: inherit;
     content: ''
   }
 
@@ -92,7 +91,7 @@ $t: .65s;
   clip-path: var(--cp);
   color: #000;
   background-color: transparent;
-  transition: $t;
+  transition: .65s;
   border-bottom: 1px solid #ccc;
 
   &::placeholder {
