@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { products } from './../../../data/products';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -9,7 +10,6 @@ export class HomeComponent implements OnInit {
   productList = products;
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }

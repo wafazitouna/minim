@@ -11,7 +11,7 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "~8.2.14",
+    "@angular/animations": "^8.2.14",
     "@angular/common": "~8.2.14",
     "@angular/compiler": "~8.2.14",
     "@angular/core": "~8.2.14",
@@ -20,6 +20,9 @@
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
     "@ng-bootstrap/ng-bootstrap": "^5.2.1",
+    "angular-animations": "0.0.10",
+    "animate.css": "^3.7.2",
+    "aos": "^2.3.4",
     "bootstrap": "^4.4.1",
     "font-awesome": "^4.7.0",
     "rxjs": "~6.4.0",

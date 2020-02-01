@@ -15,9 +15,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
+
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent, HeaderMenuComponent, SvgIconComponent, NewsletterComponent, ModalSupportComponent, SliderComponent],
-  exports: [HeaderComponent, FooterComponent, HeaderMenuComponent, SvgIconComponent, NewsletterComponent, ModalSupportComponent, SliderComponent],
+  declarations: [HeaderComponent, FooterComponent, HeaderMenuComponent, SvgIconComponent, 
+    NewsletterComponent, ModalSupportComponent, SliderComponent],
+  exports: [HeaderComponent, FooterComponent, HeaderMenuComponent, 
+    SvgIconComponent, NewsletterComponent, ModalSupportComponent, SliderComponent],
   imports: [
     CommonModule,
     RouterModule,

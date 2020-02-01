@@ -4,7 +4,13 @@
     font-family: 'Poppins';
     src: url(./assets/fonts/poppins/Poppins-Regular.ttf);
 }
-
+$grid-breakpoints: (
+  sm: 0,
+  md: 768,
+  lg: 992,
+  xl: 1240px
+);
+@import "node_modules/bootstrap/scss/bootstrap"; 
 body {
     font-family: 'Poppins', sans-serif;
     color: #000;
@@ -49,7 +55,9 @@ img {
     stroke: currentColor;
     fill: currentColor;
   }
-  
+  #wrapper {
+    margin-top: 10%;
+}
   .sticky{
     position: fixed;
     top: 0;
@@ -86,4 +94,16 @@ img {
 .product-price {
   opacity: 0.5;
   font-weight: 600;
+}
+
+
+.mb-sm-3{
+    @media(max-width: 767px){
+        margin-bottom: 3rem;
+    }
+}
+.d-sm-none{
+    @media(max-width: 767px){
+        display:none!important
+    }  
 }

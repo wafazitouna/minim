@@ -1,5 +1,9 @@
 footer {
   margin-top: 5rem;
+  @media(max-width: 767px){
+    text-align: center;
+    line-height: 1.5rem;
+  }
 }
 .footer-menu {
     text-align: center;
@@ -7,9 +11,13 @@ footer {
     opacity: 0.6;
     ul {
         list-style: none;
+        padding: 0;
     li{
-        display: inline;
+       
         padding: 0 0.9rem;
+        @media(min-width: 768px){
+          display: inline;
+        }
     }
     }
 }
@@ -19,6 +27,7 @@ footer {
 }
 .social-network{
     list-style: none;
+    padding: 0;
     a{
        color: #fff; 
     }

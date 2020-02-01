@@ -2,9 +2,20 @@
      <!-- <app-svg-icon icon="icon-close" class="icon" *ngIf="isOpen" (click)="isOpen=!isOpen"></app-svg-icon>
      <app-svg-icon icon="icon-menu" class="icon" *ngIf="!isOpen" (click)="isOpen=!isOpen"></app-svg-icon> -->
 
-      <a class="toggle-menu" href="#" [ngClass]="{'active': isOpen}" (click)="isOpen=!isOpen">
+      <a class="toggle-menu" href="#" [ngClass]="{'active': isOpen}" (click)="toggleMenu();isOpen=!isOpen">
         <i></i>
         <i></i>
         <i></i>
       </a>
+</div>
+<div class="menu-list" [@slideInOut]="menuState" >
+  <ul>
+    <li><a [routerLink]="['/shop']">Shop</a></li>
+    <li><a [routerLink]="">Menu Item</a></li>
+    <li><a [routerLink]="">Menu Item</a></li>
+    <li><a [routerLink]="">Menu Item</a></li>
+    <li><a [routerLink]="">Menu Item</a></li>
+    <li><a [routerLink]="">Menu Item</a></li>
+  </ul>
+   
 </div>

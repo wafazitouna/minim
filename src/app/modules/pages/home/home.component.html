@@ -1,28 +1,26 @@
-<div class="container-fluid">
-    <app-slider></app-slider>
-</div>
+<app-slider class="mt-5 mb-5"></app-slider>
 <div class="container-fluid mt-5 mb-5">
     <div class="row px-md-5">
-        <div class="col-sm-12 col-md-6 px-md-3">
+        <div class="col-sm-12 col-md-6 px-md-3 mb-sm-3">
             <div class="bg-grey outdoors">
                 <div class="block-numeration">1.1</div>
-                <div class="hp-title-section pb-4">
+                <div class="hp-title-section pb-4" data-aos="fade-down">
                   <h2 class="mb-0">Outdoors </h2>
                   <span class="sub-small-title ml-0">Shop</span>
                 </div>
                 <div class="img-block"><img src="./../../../../assets/img/home/outdoors.png"></div>
-                <div class="link-block"><a routerLink="routeName">Shop Outdoors</a></div>
+                <div class="link-block" data-aos="fade-up"><a routerLink="">Shop Outdoors</a></div>
             </div>
         </div>
         <div class="col-sm-12 col-md-6 px-md-3">
                 <div class="bg-blue indoors">
                 <div class="block-numeration">1.2</div>
-                <div class="hp-title-section pb-4  ">
+                <div class="hp-title-section pb-4 " data-aos="fade-down">
                   <h2 class="mb-0">Intdoors</h2>
                    <span class="sub-small-title ml-0">Shop</span>
                 </div>
                 <div class="img-block"><img src="./../../../../assets/img/home/indoors.png"></div>
-                <div class="link-block"><a routerLink="routeName">Shop Intdoors</a></div>
+                <div class="link-block" data-aos="fade-up"><a routerLink="" data-aos="fade-up">Shop Intdoors</a></div>
             </div>
         </div>
     </div>
@@ -33,7 +31,7 @@
       </div>
         <div class="row pb-5">
           
-            <div class="col-sm-12 col-md-4 col-lg-3 pb-5" *ngFor="let product of productList">
+            <div class="col-sm-12 col-md-6 col-lg-3 pb-5" *ngFor="let product of productList"  data-aos="fade-up">
                 <div class="product-container mb-5">
                     <div class="product-falgs"></div>
                     <div class="product-img"><img src="{{product.img}}"></div>
@@ -54,18 +52,18 @@
        </div>
     <div class="row pt-5 pb-5">
          <!-- <div class="col-md-12 hp-title-section mb-4">Collection <span calss="shop">Shop</span></div> -->
-        <div class="col-md-4">
+        <div class="col-md-3 col-lg-4" data-aos="fade-left">
             <div class="collection-description">
               <p>Baco nipsum dolori meat,tri-tip andouille, picanha bacon salami burgdgogghen turducken check pingh -t
                 to one</p>
             </div>
              <div class="link-block pt-5"><a routerLink="routeName">See all collection</a></div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-9 col-lg-8">
                     <div class="block-collection">
-                        <img src='./../../../../assets//img/home/lampe.png' class="large-collection">
+                        <img src='./../../../../assets//img/home/lampe.png' class="large-collection" data-aos="fade-left">
     
-                         <div class="hp-title-section pb-4">
+                         <div class="hp-title-section pb-4" data-aos="fade-right">
                             <span class="sub-small-title ml-0">Collection</span>
                            <h2 class="mb-0">Hang Lamp </h2>
                          </div>
@@ -73,7 +71,7 @@
                 </div>
             </div>
          <div class="row pt-5 pb-5">
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-right">
              <div class="block-collection">
                <img src='./../../../../assets//img/home/wood-mug.png' class="small-collection">
       
@@ -84,8 +82,8 @@
              </div>
         </div>
          </div>
-         <div class="row pt-5 pb-5 d-flex justify-content-end">
-        <div class="col-md-6 wood-bottle">
+         <div class="row pt-5 pb-5 d-flex justify-content-end " >
+        <div class="col-md-6 wood-bottle" data-aos="fade-left">
             <div class="block-collection">
               <img src='./../../../../assets//img/home/wood-bottle.png' class="small-collection">
 
@@ -98,7 +96,7 @@
     </div>
      <div class="row pt-5 pb-5">
          <div class="col-md-6">
-             <div class="block-collection">
+             <div class="block-collection" data-aos="fade-left">
                <img src='./../../../../assets//img/home/wall-clock.png' class="large-collection">
 
                 <div class="hp-title-section pb-4">

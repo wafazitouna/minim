@@ -7,7 +7,12 @@
     padding: 2rem 2rem 2rem 3rem;
 
     img{
-        width: 180px;
+        @media(max-width: 767px){
+          width: 140px;
+        }
+        @media(min-width: 768px){
+          width: 180px;
+        }
 
     }
     .img-block{
@@ -37,12 +42,15 @@
     max-width: 230px;
 }
 .block-collection{
+  @media(min-width: 768px){
     display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	align-content: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+  }
+   
 }
 
 .collection-description p {
@@ -70,3 +78,8 @@
   border-bottom: 2px solid;
 }
 
+.popular,.collection .row{
+  @media(max-width: 767px){
+    text-align: center;
+  }
+}
