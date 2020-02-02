@@ -45,3 +45,10 @@
    margin: 0 0.5rem;
    display: inline-block;
  }
+.open-modal a{
+  @media(max-width: 767px){
+    text-align: center;
+    display: block;
+  }
+  
+}

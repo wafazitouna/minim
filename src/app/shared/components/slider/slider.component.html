@@ -1,4 +1,4 @@
-<div class="container pt-5 pb-5 mr-b-5">
+<div class="container-md pt-5 pb-5 mr-b-5">
   <div class="row ">
     <div class="col-md-3 d-md-block d-sm-none">
       <div class="slider-title">Shop</div>
@@ -22,13 +22,13 @@
         </div>
       </div>
       <div class="row pt-5 pb-5">
-        <div class="col-md-9">
+        <div class="col-12 col-md-9 col-lg-9 col-xl-9">
           <div class="slider_dots">
             <a routerLink="" class="slider_indicator" *ngFor="let slide of slidePictures" [ngClass]="{active: currentSlide===slide}"></a>
           </div>
         </div>
-        <div class="col-md-3">
-          <a routerLink="" (click)="openModal()" >Support</a>
+        <div class="col-12 col-md-3 col-lg-3 col-xl-3 mt-5 open-modal">
+          <a routerLink="" (click)="openModal()" class="light-btn">Support</a>
         </div>
       </div>
     </div>

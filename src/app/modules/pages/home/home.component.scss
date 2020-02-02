@@ -50,6 +50,11 @@
     align-items: center;
     align-content: stretch;
   }
+  img{
+    @media(max-width: 767px){
+      margin-bottom: 1.5rem;
+    }
+  }
    
 }
 
@@ -81,5 +86,5 @@
 }
 
 .outdoors-indoors{
-  margin-top:200px;
+  margin-top: 10%;
 }
