@@ -17,6 +17,9 @@
         }
         li{
             padding: 1rem 0;
+            .active{
+              font-weight: 700;
+            }
         }
 }
 .slider-title{
@@ -27,12 +30,17 @@
 
 .slider_dots {
   text-align: center;
+  .active{
+    background-color: #000;
+    border:1px solid #000;
+  }
  
 }
  .slider_indicator {
    width: 10px;
    height: 10px;
-   background-color: black;
+   background-color: #fff;
+   border:1px solid #ccc;
    border-radius: 50%;
    margin: 0 0.5rem;
    display: inline-block;

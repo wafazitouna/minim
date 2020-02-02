@@ -72,14 +72,14 @@
   font-weight: 600;
 }
 
-.link-block a {
-  font-size: 1rem;
-  color: #000;
-  border-bottom: 2px solid;
-}
+
 
 .popular,.collection .row{
   @media(max-width: 767px){
     text-align: center;
   }
+}
+
+.outdoors-indoors{
+  margin-top:200px;
 }

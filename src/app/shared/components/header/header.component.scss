@@ -104,3 +104,14 @@ $mag-c: #000c;
     outline: none;
   }
 }
+
+span.bag-qty {
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  padding: 0.15rem 0.25rem;
+  position: relative;
+  border-radius: 50%;
+  color: #fff;
+  top: -0.5rem;
+}

@@ -7,3 +7,55 @@
     align-content: stretch;
     font-size: 0.8rem;
 }
+.sort-by {
+    font-size: 0.8rem;
+    font-weight: 600;
+    ul{
+        list-style: none;
+        display: inline;
+        li{
+            display: inline;
+            padding: 0 1rem;
+            &:before{
+                content: "|";
+                display: inline;
+                position: absolute;
+                margin: 0 3.5rem;
+                color: #000;
+
+            }
+             &:last-child:before{
+                content: "";
+            }
+           
+        }
+        .active{
+            color: #c0dae9;
+        }
+    }
+}
+
+.filter{
+    ul{
+        list-style: none;
+        display: inline;
+        li{
+            display: inline;
+            padding: 0 1.5rem;
+            &:before{
+                content: "x";
+                display: inline;
+                position: relative;
+                margin-right: 0.5rem;
+                color: #66696d;
+
+            }
+        }
+    }
+}
+
+.shop-products{
+    @media(max-width: 767px){
+        text-align: center;
+    }
+}

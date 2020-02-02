@@ -79,7 +79,7 @@ export class SliderComponent implements OnInit, OnDestroy {
   }
 
   openModal() {
-    this.modalService.open(ModalSupportComponent);
+    this.modalService.open(ModalSupportComponent,{ size: 'xl'});
 
   }
 

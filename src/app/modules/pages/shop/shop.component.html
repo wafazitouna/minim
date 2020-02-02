@@ -1,25 +1,50 @@
-<div class="container">
-<div class="row">
-     <div class="col-sm-12 col-md-4 col-lg-3 pb-5" *ngFor="let product of pagedProducts">
-       <div class="product-container mb-5" data-aos="fade-down">
-         <div class="product-falgs"></div>
-         <div class="product-img"><img src="{{product.img}}"></div>
-         <div class="product-details mt-4">
-           <div class="product-name">
-             <h3>{{product.name}}</h3>
-             <div class="product-brand">{{product.brand}}</div>
-           </div>
-           <div class="product-price">{{product.price}} <span class="currency">$</span></div>
-         </div>
-       </div>
-     </div>
+<div class="container-fluid ">    
+  <div class="row px-0 px-md-5 pb-5 d-flex flex-row justify-content-end">
+    <div class="sort-by px-5"><span>Sort By : </span>
+      <ul>
+        <li>Price </li>
+        <li class="active">Rating </li>
+        <li>Brand</li>
+      </ul>
+    </div>
+  </div>
 </div>
-<div class="paginator">
- <div [ngClass]="{disabled_link:pager.currentPage === 1}" class="paginator-prev" >
-     <a [routerLink]="" (click)="setPage(pager.currentPage -
+<div class="container">    
+  <div class="row pb-5 pt-5 ">
+    <div class="col-12 d-flex flex-wrap justify-content-between">
+      <div class="filter d-flex align-items-center">
+        <h2 class="mr-4">Home Decor</h2>
+        <ul class="mb-0">
+          <li>Kitchen</li>
+          <li>Decor</li>
+        </ul>
+      </div>
+      <div><button class="light-btn">Sort By</button> </div>
+    </div>
+   
+    
+  </div>
+  <div class="row pt-5 shop-products">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-5" *ngFor="let product of pagedProducts">
+      <div class="product-container mb-5" data-aos="fade-down">
+        <div class="product-falgs"></div>
+        <div class="product-img"><img src="{{product.img}}"></div>
+        <div class="product-details mt-4">
+          <div class="product-name">
+            <h3>{{product.name}}</h3>
+            <div class="product-brand">{{product.brand}}</div>
+          </div>
+          <div class="product-price">{{product.price}} <span class="currency">$</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="paginator">
+    <div [ngClass]="{disabled_link:pager.currentPage === 1}" class="paginator-prev">
+      <a [routerLink]="" (click)="setPage(pager.currentPage -
    1)"> Previous</a></div>
- <div class="paginator-num">{{pager.currentPage}}/{{pager.totalPages}} </div>
- <div [ngClass]="{disabled_link:pager.currentPage === pager.totalPages}" class="paginator-next"
-   ><a [routerLink]="" (click)="setPage(pager.currentPage + 1)">Next</a></div>
+    <div class="paginator-num">{{pager.currentPage}}/{{pager.totalPages}} </div>
+    <div [ngClass]="{disabled_link:pager.currentPage === pager.totalPages}" class="paginator-next"><a [routerLink]=""
+        (click)="setPage(pager.currentPage + 1)">Next</a></div>
+  </div>
 </div>
-</div>>
