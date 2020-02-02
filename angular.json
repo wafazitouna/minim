@@ -28,7 +28,6 @@
               "src/assets"
             ],
             "styles": [
-             
               "node_modules/font-awesome/css/font-awesome.min.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/aos/dist/aos.css",
@@ -128,8 +127,13 @@
               "devServerTarget": "minim:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "minim"
 }

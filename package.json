@@ -8,8 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-
-   "deploy": "ng build --prod --base-href https://wafazitouna.github.io/minim/ && angular-cli-ghpages --branch  gh-pages"
+    "deploy": "ng build --prod --base-href https://wafazitouna.github.io/minim/ && angular-cli-ghpages --branch  gh-pages"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +22,7 @@
     "@angular/router": "~8.2.14",
     "@ng-bootstrap/ng-bootstrap": "^5.2.1",
     "angular-animations": "0.0.10",
+    "angular-cli-ghpages": "^0.6.2",
     "animate.css": "^3.7.2",
     "aos": "^2.3.4",
     "bootstrap": "^4.4.1",
