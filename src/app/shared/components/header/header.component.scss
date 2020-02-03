@@ -4,10 +4,10 @@ header {
     line-height: 60px;
         height: 60px;
         @media(min-width:768px){
-            padding-top: 2.5rem;
+            margin-top: 2.5rem;
         }
          @media(max-width:767px) {
-           padding-top: 1.5rem;
+           margin-top: 1.5rem;
          }
     .minim-logo {
         font-weight: 700;
@@ -52,7 +52,7 @@ $mag-c: #000c;
   text-indent: -100vw;
   transition:.65s ease-out;
   cursor: pointer;
-
+top: 8px;
   &:before,
   &:after {
     position: absolute;
@@ -99,6 +99,7 @@ $mag-c: #000c;
   transition: .65s;
   border-bottom: 1px solid #ccc;
 
+
   &::placeholder {
     opacity: .5;
     font-size: .875em;
@@ -111,14 +112,20 @@ $mag-c: #000c;
 }
 
 .bag-qty {
-  width: 15px;
-  height: 15px;
-  background-color: #ccc;
-  padding: 0.15rem 0.5rem;
-  position: relative;
-  border-radius: 50%;
-  color: #fff;
-  top: -0.5rem;
+     width: 20px;
+     height: 20px;
+     background-color: #ccc;
+     position: absolute;
+     border-radius: 50%;
+     color: #fff;
+     top: 8px;
+     padding: 0 0.4rem;
+     margin-left: 20px;
+    span{
+          position: absolute;
+              color: #fff;
+          top: -20px;
+    }
 }
 
 

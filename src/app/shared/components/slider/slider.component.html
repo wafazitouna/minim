@@ -1,4 +1,4 @@
-<div class="container-md pt-5 pb-5 mr-b-5">
+<div class="container pt-5 pb-5 mr-b-5">
   <div class="row ">
     <div class="col-md-3 d-md-block d-sm-none">
       <div class="slider-title">Shop</div>
@@ -9,25 +9,26 @@
         </li>
       </ul>
     </div>
-    <div class="col-md-sm-12 col-md-9 slider-home">
+    <div class="col-xs-md-sm-12 col-md-9 slider-home">
       <div class="row row-slider">
-        <div class="col-md-9">
+        <div class="col-md-8">
           <img src="{{currentSlide.img}}">
         </div>
-        <div class="col-md-3">
-          <div class="hp-title-section">
+        <div class="col-md-4 pl-lg-5">
             <p>{{currentSlide.numeration}}</p>
-            <h2 class="mb-0">{{currentSlide.textLine1}}</h2>
-          </div>
+            <div class="slider-caption">
+              <p class="mb-0">{{currentSlide.textLine1}}</p>
+              <p class="mb-0 big-title-slide">{{currentSlide.textLine2}}</p>
+            </div>
         </div>
       </div>
       <div class="row pt-5 pb-5">
-        <div class="col-12 col-md-9 col-lg-9 col-xl-9">
+        <div class="col-xs-12 col-md-9 col-lg-9 col-xl-9">
           <div class="slider_dots">
             <a routerLink="" class="slider_indicator" *ngFor="let slide of slidePictures" [ngClass]="{active: currentSlide===slide}"></a>
           </div>
         </div>
-        <div class="col-12 col-md-3 col-lg-3 col-xl-3 mt-5 open-modal">
+        <div class="col-xs-12 col-md-3 col-lg-3 col-xl-3 open-modal">
           <a routerLink="" (click)="openModal()" class="light-btn">Support</a>
         </div>
       </div>

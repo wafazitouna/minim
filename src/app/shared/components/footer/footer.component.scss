@@ -6,19 +6,28 @@ footer {
   }
 }
 .footer-menu {
-    text-align: center;
+  
     font-size: 0.8rem;
     opacity: 0.6;
     ul {
         list-style: none;
         padding: 0;
+        @media(max-width:991px){
+          margin-top:0.8rem;
+        }
     li{
        
         padding: 0 0.9rem;
+        &:first-child{
+          padding-left: 0;
+        }
         @media(min-width: 768px){
           display: inline;
         }
     }
+    }
+    @media(min-width: 992px){
+        text-align: center;
     }
 }
 .minim-copyright {

@@ -22,15 +22,15 @@ export class SliderComponent implements OnInit, OnDestroy {
     },
     {
       id: 2, menuLabel: 'Accessoires', img: './assets/img/slider/sofa1.png',
-      textLine1: 'Limited edition', textLine2: 'White Clock', numeration: '1.1'
+      textLine1: 'New Sofa', textLine2: 'New collection', numeration: '1.1'
     },
     {
       id: 3, menuLabel: 'Sports', img: './assets/img/slider/sofa2.png',
-      textLine1: 'Limited edition', textLine2: 'White Clock', numeration: '1.2'
+      textLine1: 'Home Deco', textLine2: 'Best Collection', numeration: '1.2'
     },
     {
       id: 4, menuLabel: 'Clothing Wear', img: './assets/img/slider/sofa3.png',
-      textLine1: 'Limited edition', textLine2: 'White Clock4', numeration: '1.3'
+      textLine1: 'Limited edition ', textLine2: 'Classic Sofa', numeration: '1.3'
     }
   ];
   subscription: Subscription;
@@ -47,7 +47,7 @@ export class SliderComponent implements OnInit, OnDestroy {
 
 
     this.subscription = timer.subscribe(_ => {
-      this.setCurrentSliderIndex();
+     // this.setCurrentSliderIndex();
     });
   }
 
