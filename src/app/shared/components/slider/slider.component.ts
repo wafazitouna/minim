@@ -47,7 +47,7 @@ export class SliderComponent implements OnInit, OnDestroy {
 
 
     this.subscription = timer.subscribe(_ => {
-     // this.setCurrentSliderIndex();
+     this.setCurrentSliderIndex();
     });
   }
 
