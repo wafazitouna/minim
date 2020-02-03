@@ -1,9 +1,8 @@
-import { animate, style, transition, trigger, state } from '@angular/animations';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { fadeInDownOnEnterAnimation, fadeInOnEnterAnimation } from 'angular-animations';
 import { interval, Subscription } from 'rxjs';
 import { ModalSupportComponent } from '../modal-support/modal-support.component';
-import { fadeInOnEnterAnimation, fadeInDownOnEnterAnimation } from 'angular-animations';
 
 @Component({
   selector: 'app-slider',
@@ -18,19 +17,19 @@ export class SliderComponent implements OnInit, OnDestroy {
 
   slidePictures = [
     {
-      id: 1, menuLabel: 'Home furnishings', img: 'assets/img/slider/slide1.jpg',
+      id: 1, menuLabel: 'Home furnishings', img: './assets/img/slider/slide1.jpg',
       textLine1: 'Limited edition', textLine2: 'White Clock', numeration: '1.0'
     },
     {
-      id: 2, menuLabel: 'Accessoires', img: 'assets/img/slider/sofa1.png',
+      id: 2, menuLabel: 'Accessoires', img: './assets/img/slider/sofa1.png',
       textLine1: 'Limited edition', textLine2: 'White Clock', numeration: '1.1'
     },
     {
-      id: 3, menuLabel: 'Sports', img: 'assets/img/slider/sofa2.png',
+      id: 3, menuLabel: 'Sports', img: './assets/img/slider/sofa2.png',
       textLine1: 'Limited edition', textLine2: 'White Clock', numeration: '1.2'
     },
     {
-      id: 4, menuLabel: 'Clothing Wear', img: 'assets/img/slider/sofa3.png',
+      id: 4, menuLabel: 'Clothing Wear', img: './assets/img/slider/sofa3.png',
       textLine1: 'Limited edition', textLine2: 'White Clock4', numeration: '1.3'
     }
   ];
