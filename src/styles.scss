@@ -58,23 +58,7 @@ img {
   #wrapper {
     margin-top: 10%;
 }
-  .sticky{
-    position: sticky;
-    top: 0;
-    overflow: hidden;
-    z-index: 10;
-    padding-top: 0!important;
-    width: 100%;
-    background-color: #ffffffe6;
-    // height: 4rem;
-    line-height: 60px;
-        .toggle-menu{
-            top:5px!important;
-        }
-       [for=search-btn]{
-               top: 12px !important;
-       }
-  }
+
 .product-img img{
     width: 200px;
 }
@@ -122,7 +106,9 @@ img {
         color: #000!important;
     }
 }
-
+.sticky .menu-list {
+  top: 3.5rem!important;
+}
 .light-btn{
     background-color: #fff;
     border: 2px solid #000;
