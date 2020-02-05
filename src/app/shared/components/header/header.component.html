@@ -1,26 +1,33 @@
 <header id="minim-header">
   <div class="container-fluid">
     <div class="row px-lg-5">
-      <div class="col-3 col-sm-1 col-md-2 col-lg-1 col-xl-1 text-center">
+      <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 text-center">
         <app-header-menu></app-header-menu>
       </div>
-      <div class="d-xs-none d-sm-none d-md-block col-md-1 ol-lg-1 col-xl-1">
-        <input id='search-btn' type='checkbox' />
-        <label for='search-btn'>Show search bar</label>
-        <input id='search-bar' type='text' placeholder='Search...' /></div>
+      <div class="col-2 col-sm-2 col-md-1 ol-lg-1 col-xl-1 d-flex justify-content-center">
+
+          <app-svg-icon icon="icon-search" class="icon" (click)="openSeachBar=!openSeachBar" *ngIf="!openSeachBar">
+          </app-svg-icon>
+          <app-svg-icon icon="icon-close" class="icon" (click)="openSeachBar=!openSeachBar" *ngIf="openSeachBar">>
+          </app-svg-icon>
+      </div>
       <div class="col-6 col-md-6 col-lg-8 col-xl-8 minim-logo"><a
           [routerLink]="['/']">minim</a></div>
       <div class="d-xs-none d-sm-none col-md-1 ol-lg-1 col-xl-1
         account d-md-flex justify-content-center">
         <a [routerLink]="">
           <span class="d-xs-none text-uppercase">account</span></a> </div>
-      <div class="col-3 col-sm-1 col-md-2 col-lg-1 col-xl-1 d-flex justify-content-center">
+      <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 d-flex justify-content-center">
         <div class="shopping-bag">
           <app-svg-icon icon="icon-bag" class="icon"></app-svg-icon>
           <div class="bag-qty"><span>4</span></div>
         </div>
       </div>
-
+      
     </div>
+    
+  </div>
+  <div class=" search-bar" *ngIf="openSeachBar">
+    <input type="text" value="Search...">
   </div>
 </header>

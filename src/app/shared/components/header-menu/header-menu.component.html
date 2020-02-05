@@ -8,9 +8,6 @@
 <div class="menu-list" [@slideInOut]="menuState" >
 
   <ul>
-    <li>
-      <div class=" d-md-none"><input type="text" Value="Search..." class="w-100"></div>
-    </li>
     <li class=" d-md-none"><a [routerLink]="" (click)="toggleMenu();isOpen=!isOpen">ACCOUNT</a></li>
     <li><a [routerLink]="['/shop']" (click)="toggleMenu();isOpen=!isOpen">Shop</a></li>
     <li><a [routerLink]="" (click)="toggleMenu();isOpen=!isOpen">Menu Item</a></li>
